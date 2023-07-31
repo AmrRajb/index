@@ -1,44 +1,63 @@
 <!DOCTYPE html>
-<html style="background-color: black;" lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <form method="get" style="color: rgb(255, 0, 0); ">
-        <label for="un1">user name:</label>
-        <input type="text" name="user_name" id="un1"><br>
-        password: <input type="password" name="mypass" id="1"><br>
-        <input type="radio" name="gender" id="g1"> <label for="g1"> femal</label>
-        <input type="radio" name="gender" id="g2"> <label for="g2">male</label>
-        <br>
-        <a><img src="tree-1.jpg" width="100px" height="100px" alt=""></a>
+    <form action="" method="post" enctype="multipart/form-data" autocomplete="on" >
+        <fieldset>
+            <legend>fields types</legend>
+            <div style="padding: 20px;">
+                
+                <label for="fname">farstname</label>
+                <input type="text" id="fname" name="fname" >
+            </div>     
+
+          
+            <div style="padding: 20px;">
+                <label for="pwd">password</label>
+                <input type="password" id="pwd" name="pwd">
+        
+            </div> 
+            <div style="padding: 30px;">
+                <input type="radio" id="MALE" name="gnd" value="male">
+                <label for="gender"> male</label><br>
+                <input type="radio" id="FEMAL" name="gnd" value="femal">
+                <label for="gender"> femal</label><br>
+                
+            </div>   
+            <div style="padding: 20px;">
+            <input type="checkbox" id="veh1" name="veh1" value="car" >
+            <label for="veh1" style="color: yellow; font-size: 50px;"> i have the car  <img src="images.jpg" width="50" height="50" alt=""></label><br><br>
+            <input type="checkbox" id="veh2" name="veh2" value="boat" >
+            <label for="veh2" style="color: red;"> i have the boat</label><br>
+            </div>   
+            <div style="padding: 40px;">
+                
+                <button>click</button>
+            </div>
+            <div style="padding: 20px;">
+                <label for="1"> entar the coler</label>
+                <input type="color" name="cloer" id="1">
+
+            </div>
+            <div style="padding: 20px;"> 
+             <label for="2">enter the your email </label>
+            <input type="email" name=" hest" id="2">
+            <input type="file" value="phone" multiple><br>
+            <label for="4"> fav lang</label>
+            <select name="22" id="4"></select>
+            <option value="css">ahmad css</option>
+            <OPtion value="HTML"><html></html></OPtion>
+        </div>
+        <div style="padding: 40px;">
+            <input type="submit" style="color: blue; width: 1000px;"  >
+            
+        </div>
+        </fieldset>
     </form>
-    <table  style="color: rgb(255, 0, 0); width: 50%;" border="2">
-    <thead> 
-     <tr>
-        <td>name</td> 
-        <td> id </td>
-        <td>namper</td>      
-     </tr>
-    </thead> 
-    <tbody> 
-     <tr>
-            <td slot="slot">amr</td>
-            <td> 0</td>
-            <td> 0</td>
-     </tr>
-    </tbody>
-<tfoot style="color: blue;">
-     <tr>
-            <td>ahmad</td>
-            <td>1</td>
-            <td>1</td>
-     </tr>
-    </tfoot>
-    </table>
     
 </body>
 </html>
